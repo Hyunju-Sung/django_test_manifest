@@ -1,0 +1,22 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: django-test
+  namespace: default
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: django-test-fargate
+  template:
+    metadata:
+      labels:
+        app: django-test-fargate
+    spec:
+      containers:
+        - name: django-test
+          image: 873323336471.dkr.ecr.ap-northeast-2.amazonaws.com/django_test:b69179a10d102b8821c31525f8a5f5b50f610520
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 80
