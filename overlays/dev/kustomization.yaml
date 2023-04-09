@@ -3,7 +3,7 @@ kind: Kustomization
 images:
 - name: 873323336471.dkr.ecr.ap-northeast-2.amazonaws.com/django_test
   newName: 873323336471.dkr.ecr.ap-northeast-2.amazonaws.com/django_test
-  newTag: abcdefg
+  newTag: b69179a10d102b8821c31525f8a5f5b50f610520
 resources:
 - ../../base
 patchesStrategicMerge:
