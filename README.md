@@ -1,0 +1,2 @@
+# django_test_manifest
+django_test_manifest
